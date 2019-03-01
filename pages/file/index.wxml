@@ -1,0 +1,6 @@
+<!--pages/file/index.wxml-->
+
+<view class='btn-area'>
+   <button type='default' bindtap='saveFile'>保存文件</button>
+   <button type='primary' bindtap='payTap'>支付</button>
+</view>

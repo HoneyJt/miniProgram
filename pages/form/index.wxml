@@ -1,0 +1,40 @@
+<!--pages/form/index.wxml-->
+
+<!-- form表单 -->
+<form bindsubmit='formSubmit' bindreset='formReset'>
+   <view class='section section_gap'>
+   <view class='section__title'>switch</view>
+   <switch name="switch"></switch>
+   </view>
+
+   <view class='section section_gap'>
+     <view class='section__title'>slider</view>
+     <slider name="slider" show-value min="10" max='500'></slider>
+   </view>
+
+   <view class='section section_gap'>
+     <view class='section__title'>input</view>
+     <input name='input' placeholder='请填写您的信息'></input>
+   </view>
+
+   <view class='section section_gap'>
+     <view class='section__title'>radio</view>
+     <radio-group >
+       <label><radio value='radio1'>radio1</radio></label>
+       <label><radio value='radio2'>radio2</radio></label>
+     </radio-group>
+   </view>
+
+   <view class='section section_gap'>
+     <view class='section__title'>checkbox</view>
+     <checkbox-group name='checkbox'>
+       <label><checkbox value='checkbox1'>checkbox1</checkbox></label>
+       <label><checkbox value='checkbox2'>checkbox2</checkbox></label>
+     </checkbox-group>
+   </view>
+
+   <view class='btn-area'>
+     <button form-type='submit' type='default'>submit</button>
+     <button form-type='reset' type='primary'>reset</button>
+   </view>
+</form>

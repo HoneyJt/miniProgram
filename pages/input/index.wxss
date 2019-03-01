@@ -1,0 +1,14 @@
+/* pages/input/index.wxss */
+@import "../../lib/weui.wxss";
+
+.header{
+  width: 100%;
+  height: 40rpx;
+}
+
+.headTitle{
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

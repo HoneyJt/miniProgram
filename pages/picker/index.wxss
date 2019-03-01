@@ -1,0 +1,11 @@
+/* pages/picker/index.wxss */
+@import "../../lib/weui.wxss";
+
+.section__title{
+  padding-left: 15px;
+}
+
+.picker{
+  padding: 15px;
+  background-color: #eee;
+}

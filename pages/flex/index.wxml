@@ -1,0 +1,42 @@
+<!--pages/flex/index.wxml-->
+<view class='page'>
+   <view class='page__hd'>
+      <text class='page__title'>flex的布局:</text>
+      <text class='page__desc'>容器属性和项目属性</text>
+   </view>
+   <view class='page__bd'>
+     <view class='page__section'>
+       <view class='icon'></view>
+       <view class='content'>标题1</view>
+     </view>
+     
+      <view class='page__section'>
+       <view class='icon'></view>
+       <view class='content'>标题1</view>
+     </view>
+
+      <view class='page__section'>
+       <view class='icon'></view>
+       <view class='content'>标题1</view>
+     </view>
+
+      <view class='page__section'>
+       <view class='icon'></view>
+       <view class='content'>标题1</view>
+     </view>
+
+      <view class='page__section'>
+       <view class='icon'></view>
+       <view class='content'>标题1</view>
+     </view>
+   </view>
+
+   <view class='btn-area'>
+      <view class='flex-direction'>
+        <text>flex-direction:属性</text>
+        <block wx:for="{{flex_direction}}" wx:key="{{flex_direction}}">
+           <button type='default' bindtap='directionTap'>{{item}}</button>
+        </block>
+      </view>
+   </view>
+</view>

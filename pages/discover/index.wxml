@@ -1,0 +1,57 @@
+<!--pages/discover/index.wxml-->
+<!-- 滚动视图 -->
+
+<swiper 
+indicator-dots='{{indicatorDots}}'
+autoplay='{{autoplay}}' 
+interval='{{interval}}' 
+duration='{{duration}}'
+indicator-active-color="{{selectColor}}"
+current='{{index}}'
+bindchange = "itemChange"
+circular='{{circle}}'
+>
+  <block wx:for="{{imageUrls}}" wx:key="imageUrls">
+     <swiper-item>
+       <image src='{{item}}' class='slide-image' style='width:100%;height:150;'></image>
+     </swiper-item>
+  </block>
+</swiper>
+  <button bindtap='changeIndicatorDots'>indicator-dots</button>
+  <button bindtap='changeAutoplay'>autoplay</button>
+  <slider bindchange='intervalChange' show-value min="500" max="2000">interval</slider>
+  <slider bindchange='durationChange' show-value min="1000" max="10000">dutation</slider>
+
+<view class='btn-area'>
+   <view class='body-view'>
+      <text>{{text}}</text>
+      <button bindtap='add'>add line</button>
+      <button bindtap='remove'>remove line</button>
+   </view>
+</view>
+
+<button type='default' size='{{defaultSize}}' loading='{{loading}}' plain='{{plain}}' disabled='{{disabled}}' bindtap='default' hover-class='other-button-hover'>default</button>
+<button type='primary' size='{{primarySize}}' loading='{{loading}}' plain='{{plain}}' disabled='{{disabled}}' bindtap='primary'>primary</button>
+<button type='warn' size='{{warnSize}}' loading='{{loading}}' plain='{{plain}}' disabled='{{disabled}}' bindtap='warn'>warn</button>
+
+<button bindtap="setDisabled">点击设置以上按钮disabled属性</button>
+<button bindtap="setPlain">点击设置以上按钮plain属性</button>
+<button bindtap="setLoading">点击设置以上按钮loading属性</button>
+<button open-type="contact">进入客服会话</button>
+<button open-type='getUserInfo' lang='zh_CN' bindgetuserinfo='userInfo'></button>
+<button bindtap='picker' type='default'>picker的几种选择器</button>
+<button bindtap='pickerView' type='primary'>picker-View的实现</button>
+<button bindtap='radioTap' type='warn'>radio的属性</button>
+<button bindtap='sliderTap' type='default'>slider的属性</button>
+<button bindtap='switchTap' type='primary'>switch基本属性</button>
+<button bindtap='textareaTap' type='warn'>textarea基本属性</button>
+<button bindtap='navgateTap' type='default'>navigator基本方法</button>
+<button bindtap='audioTap' type='default'>audio播放</button>
+<button bindtap='imageTap' type='primary'>image属性的介绍</button>
+<button bindtap='videoTap' type='warn'>video的基本属性</button>
+<button bindtap='cameraTap' type='default'>camera基本实现</button>
+<button bindtap='mapTap' type='primary'>map地图展示</button>
+<button bindtap='canvasTap' type='warn'>canvas介绍</button>
+<button bindtap='webViewTap' type='default'>webView介绍</button>
+<button bindtap='apiTap' type='primary'>api介绍</button>
+<button bindtap='scrollTop' type='warn'>回到顶部</button>

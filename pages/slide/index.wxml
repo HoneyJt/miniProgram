@@ -1,0 +1,36 @@
+<!--pages/slide/index.wxml-->
+<view class='page'>
+  <view class='page_hd'>
+     <view class='page_title'>slider</view>
+     <view class='page_desc'>滑块</view>
+  </view>
+  <view class='page_bd'>
+     <view class='section section_gap'>
+       <text class='section_title'>设置left/right icon</text>
+       <view class='body-view'>
+         <slider bindchange='bind1changge' left-icon='cancel' right-icon='success_no_circle'></slider>
+       </view>
+     </view>
+
+     <view class='section section_gap'>
+       <text class='section_title'>设置step</text>
+       <view class='body-view'>
+         <slider bindchange='slider2change' step='5'></slider>
+       </view>
+     </view>
+
+     <view class='section section_gap'>
+       <text class='section_title'>显示当前value</text>
+       <view class='body-view'>
+         <slider bindchange='slider3change' show-value></slider>
+       </view>
+     </view>
+
+     <view class='section section_gap'>
+       <text class='section_title'>设置最小/最大值</text>
+       <view class='body-view'>
+         <slider bindchange='slider4change' min='50' max='200' show-value></slider>
+       </view>
+     </view>
+  </view>
+</view>

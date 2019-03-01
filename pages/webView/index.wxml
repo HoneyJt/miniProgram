@@ -1,0 +1,6 @@
+<!--pages/webView/index.wxml-->
+<view class='page-body'>
+  <view class='page-section page-section-gap'>
+    <web-view src='src="http://yjt.it120.cc/user'></web-view>
+  </view>
+</view>

@@ -1,0 +1,87 @@
+<!--pages/scale/index.wxml-->
+
+<checkbox-group bindchange='checkboxChange'>
+   <label class='checkbox' wx:for='{{items}}' wx:key="{{items}}">
+     <checkbox value='{{item.name}}' checked='{{item.checked}}'>{{item.value}}</checkbox>
+   </label>
+</checkbox-group>
+
+<view class='page-body'>
+  <view class='page-section'>
+     <view class='page-section-title'>movable-view区域小于movable-area</view>
+     <movable-area>
+        <movable-view x="{{x}}" y="{{y}}" direction="all">text</movable-view>
+     </movable-area>
+  </view>
+  <view class='btn-area'>
+     <button bindtap='tap' class='page-body-button' type='primary'>move to (30px,30px)</button>
+  </view>
+
+  <view class='page-section'>
+    <view class='page-section-title'>movable-view区域大于movable-area</view>
+    <movable-area>
+      <movable-view class='max' direction="all">text</movable-view>
+    </movable-area>
+  </view>
+
+  <view  class='page-section'>
+     <view class='page-section-title'>只能横向移动</view>
+     <movable-area>
+        <movable-view direction="horizontal">text</movable-view>
+     </movable-area>
+  </view>
+
+  <view class='page-section'>
+    <view class='page-section-title'>只能纵向移动</view>
+    <movable-area>
+      <movable-view direction="vertical">text</movable-view>
+    </movable-area>
+  </view>
+
+  <view class='page-section'>
+    <view class='page-section-title'>可超出边界</view>
+    <movable-area>
+      <movable-view direction='all' out-of-bounds>text</movable-view>
+    </movable-area>
+  </view>
+
+  <view class='page-section'>
+   <view class='page-setion-title'>带有惯性</view>
+   <movable-area>
+      <movable-view direction='all' inertia>text</movable-view>
+   </movable-area>
+  </view>
+
+  <view class='page-section'>
+   <view class='page-section-title'>可放缩</view>
+   <movable-area scale-area>
+     <movable-view direction='all' bindchange='onChange' bindscale='onScale' scale scale-min='0.5' scale-max='4' scale-value="{{scale}}">text</movable-view>
+   </movable-area>
+  </view>
+  <view class="btn-area">
+    <button bindtap="tap2" class="page-body-button" type="primary">click me to scale to 3.0</button>
+  </view>
+
+
+
+</view>
+
+<view class='group'>
+   <block wx:for="{{iconSize}}" wx:key="{{iconSize}}">
+      <icon type='success' size='{{item}}'></icon>
+   </block>
+</view>
+
+<view class='group'>
+  <block wx:for="{{iconType}}" wx:key="{{iconType}}">
+    <icon type='{{item}}' size='40'></icon>
+  </block>
+</view>
+
+<view class='group'>
+  <block wx:for="{{iconColor}}" wx:key="{{iconColor}}">
+     <icon type='success' size='40' color='{{item}}'></icon>
+  </block>
+</view>
+
+

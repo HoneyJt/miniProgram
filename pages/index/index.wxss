@@ -1,0 +1,71 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.page-section{
+  margin-bottom: 60rpx;
+  width: 100%;
+}
+
+.flex-wrp{
+  display: flex;
+}
+
+.bc_green{
+  background: green;
+  width: 100px;
+  height: 100px;
+}
+
+.bc_red{
+  background: red;
+  width: 100px;
+  height: 100px;
+}
+
+.bc_blue{
+  background: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.page-section-title{
+  font-size: 28rpx;
+  color: #999;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx; 
+}
+
+.rich-text-wrp{
+  padding: 0 25rpx;
+  background-color: #fff;
+}
+
+.rech-text{
+  width: 700rpx;
+  padding: 25rpx 0;
+}
+
+progress{
+  margin: 10rpx;
+}
+
+

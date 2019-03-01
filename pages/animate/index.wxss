@@ -1,0 +1,33 @@
+/* pages/animate/index.wxss */
+
+.animation-element-wrapper{
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+.animation-element{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #1AAD19;
+  
+}
+
+.animation-buttons{
+   width: 100%;
+   box-sizing: border-box;
+   height: 700rpx;
+   padding: 30rpx 50rpx 10rpx;
+}
+
+.animation-button{
+   display: inline-block;
+   line-height: 2;
+   width: 300rpx;
+   margin: 15rpx 12rpx;
+}
+
+.animation-button-reset{
+  width: 620rpx;
+}

@@ -1,0 +1,5 @@
+/* pages/radio/index.wxss */
+
+.radio{
+  display: block;
+}

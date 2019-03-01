@@ -1,0 +1,5 @@
+/* pages/form/index.wxss */
+
+form{
+  padding: 10px;
+}

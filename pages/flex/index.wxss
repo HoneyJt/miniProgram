@@ -1,0 +1,24 @@
+/* pages/flex/index.wxss */
+.icon{
+  height: 60rpx;
+  width: 60rpx;
+  background-color: rgb(107, 240, 195);
+}
+
+.page__bd{
+  /* width: 100%; */
+  background-color:white;
+  /* border-bottom: #eee 1px solid; */
+  display: flex;
+  /* 设置在主轴的对其方式 */
+  justify-content: center;
+  
+   /* align-items: center;
+    */
+    /* 社会在交叉轴的对其方式 */
+  align-content: center; 
+   /*设置主轴方向为竖直方向  */
+  flex-direction: column;
+  /* 设置允许是否多行排列 */
+  flex-wrap: wrap;
+}

@@ -1,0 +1,6 @@
+/* pages/canvas/index.wxss */
+.canvas {
+  width: 305px;
+  height: 305px;
+  background-color: #fff;
+}

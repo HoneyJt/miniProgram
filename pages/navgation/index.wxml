@@ -1,0 +1,11 @@
+<!--pages/navgation/index.wxml-->
+<view class='btn-area'>
+  <navigator url='/pages/picker/index?title=navigator' hover-class='navigator-hover'>
+  跳转到新页面</navigator>
+  <navigator url='/pages/radio/index?title=redirect' hover-class='other-navigator-hover' open-type='redirect'>
+  在当前页打开</navigator>
+  <navigator url='/pages/index/index' open-type='switchTab' hover-class='other-navigator-hover'>
+  切换tab</navigator>
+  <navigator open-type='navigate' app-id='wx6a0c87a3cb2923ec' target='miniProgram'>
+  打开绑定程序</navigator>
+</view>

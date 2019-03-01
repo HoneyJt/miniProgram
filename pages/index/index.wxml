@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <button open-type="contact" bindcontact="handleContact">联系客服</button>
+</view>
+<!-- 进度条右侧显示百分比 -->
+<progress percent='20' show-info></progress>
+<!-- 线宽 -->
+<progress percent='40' stroke-width='12'></progress>
+<!-- 进度条颜色 -->
+<progress percent='60' color='pink'></progress>
+<!-- 进度条从左到右的动画 -->
+<progress percent='80' active></progress>
+
+<view class='page-body'>
+   <view class='page-section'>
+      <view class='page-section-title'>传入html字符串</view>
+      <view class='rich-text-wrp'>
+        <rich-text nodes="{{html}}" bindtap='tap'></rich-text>
+      </view>
+   </view>
+   <view class='page-section'>
+      <view class='page-section-title'>传入节点列表</view>
+      <view class='rich-text-wrp'>
+         <rich-text nodes="{{nodes}}" bindtap='tap'></rich-text>
+      </view>
+   </view>
+</view>
+
+<view class='section'>
+    <view class='section__title'>flex-direction: row</view>
+    <view class='flex-wrp' style='flex-direction: row;'>
+       <view class='flex-item bc_green'>1</view>
+       <view class='flex-item bc_red'>2</view>
+       <view class='flex-item bc_blue'>3</view>
+    </view>
+</view>
+
+<view class='section'>
+   <view class='section__title'>flex-direction: column</view>
+   <view class='flex-wrp' style='height:300px; flex-direction:column;'>
+      <view class='flex-item bc_green'>1</view>
+      <view class='flex-item bc_red'>2</view>
+      <view class='flex-item bc_blue'>3</view>
+   </view>
+</view>
+
+<button type='primary' bindtap='topTap'>置顶</button>

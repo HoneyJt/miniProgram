@@ -1,0 +1,20 @@
+<!--pages/API/index.wxml-->
+<text>{{userInfo.version}}</text>
+
+<button type='default' bindtap='switchTab'>切换tab</button>
+<button type='primary' bindtap='launchPage'>打开某个页面</button>
+<button type='warn' bindtap='backPage'>返回</button>
+<button type='default' bindtap='toastTap'>toast展示</button>
+<button type='primary' bindtap='modelTap'>模态对话框</button>
+<button type='warn' bindtap='loadingTap'>loading提示</button>
+<button type='default' bindtap='actionTap'>action展示</button>
+<button type='primary' bindtap='navTap'>更换导航栏标题</button>
+<button type='warn' bindtap='navColorTap'>更换导航栏颜色</button>
+<button type='default' bindtap='refreshTap'>下拉刷新</button>
+<button type='primary' bindtap='tabBarTap'>tabBar红点</button>
+<button type='warn' bindtap='fontTap'>字体加载</button>
+<button type='default' bindtap='animateTap'>动画</button>
+<button type='primary' bindtap='networkTap'>网络</button>
+<button type='warn' bindtap='fileTap'>文件</button>
+<button type='default' bindtap='addressTap'>收货地址</button>
+<button type='primary' bindtap='flexTap'>flex布局方式</button>

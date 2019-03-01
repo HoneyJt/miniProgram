@@ -1,0 +1,32 @@
+/* pages/mine/index.wxss */
+
+.scroll-view-item{
+  height: 80px;
+}
+
+.scroll-view-item_H{
+  height: 80px;
+  width: 50%;
+  display:inline-block;
+}
+
+.scroll-view_H{
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bc_green{
+  background: green;
+}
+
+.bc_red{
+  background: red;
+}
+
+.bc_yellow{
+  background: yellow;
+}
+
+.bc_blue{
+  background: blue;
+}
